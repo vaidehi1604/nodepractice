@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(83, 159, 159);
+        text-align: center;
+      }
+      hr {
+        width: 600px;
+      }
+      .container {
+        margin-top: 60px;
+      }
+      #contact-form {
+        padding-top: 10px;
+        /* margin-top: 80px; */
+        width: 500px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        height: 300px;
+        margin: auto;
+      }
+      .form{
+        padding: 10px;
+      }
+      label {
+        width: 100%;
+        font-size: large;
+      }
+      input{
+        width:80%;
+      }
+      button{
+        width:80%;
+        border:none;
+        background-color: rgb(83, 159, 159);
+        padding: 10px;;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <%- include('./partials/nav.ejs') %>
+      <br />
+      <br />
+    </div>
+    <br />
+    <div class="container">
+      <h1>
+     CONTACT US !! 
+        <hr />
+    </h1>
+
+        <h2>THANK YOU FOR GETTING IN TOUCH!</h2>
+        <p>You Contacted : <%= data.name%> in the <%= data.department%></p>
+<p>we will reply you at <%= data.email%></p>
+    </div>
+  </body>
+</html>
